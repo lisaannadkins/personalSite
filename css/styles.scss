@@ -1,0 +1,108 @@
+/*@import "includes/font-awesome";*/
+$turquoise: #009598;
+$focus: #73C6B6;
+$contrast-link: #006a76;
+$standard-space: 20px;
+body {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+nav { 
+  ul {
+    padding: 0 20px;
+      li {
+      list-style-type: none;
+      display: inline-block;
+      margin-right: 2em;
+      a {
+        color: $contrast-link;
+      }
+    }
+  }
+  
+}
+
+html {
+    color: #333;
+    font-size: 1.3em;
+    line-height: 1.4;
+		fhei-family: 'Roboto Condensed', sans-serif;
+  header {
+    //height: 300px;
+    width: 100vw;
+    //background: url(../img/headshotPanoramic.jpg) 0px -76px transparent;
+    //opacity: .5;
+    background-size: 100%;
+  }
+	h1 {
+		font-family: 'Sacramento', cursive;
+		font-size: 5rem;
+		color: $turquoise;
+	}
+  h2 {
+    
+  }
+	h1, h2, footer, #contact,
+  #home,
+  #portfolio { 
+		margin: $standard-space;
+	}
+  #contact,
+  #home,
+  #portfolio {
+    margin-bottom: 50px;
+    p {
+      max-width: 70vw;
+    }
+  }
+	#contact a {
+		font-size: 76px;
+		margin-right: 16px;
+	}
+  #portfolio a {
+    display: block;
+    margin-bottom: 1em;
+  }
+	a {
+		color: $turquoise;
+		text-decoration: none;
+		&:hover {
+			color: #555;
+		cursor: pointer;
+		}
+		&:focus {
+			text-shadow: $focus;
+		}
+	}
+	p {
+		a {
+			color: $contrast-link;
+		}
+	}
+	#portfolio {
+    .resume-list {
+      li {
+        display: block;
+        margin-bottom: 32px;
+        li {
+          margin-bottom: 0;
+        &:first-child {
+          text-transform: uppercase;
+        }
+      }
+      }
+      
+    }
+	}
+  footer {
+     display: flex;
+    font-size: .8em;
+    svg {
+      stroke-width: 36px;
+      height: 36px;
+      align-content: center;
+      margin: -5px 5px 0 5px;
+    }
+  }
+}
+
+
